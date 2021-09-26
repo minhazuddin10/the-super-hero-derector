@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg pt-3 navbar navbar-light ">
           <div className="container-fluid">
             <a className="navbar-brand logo" href="team">
-              Programming Team
+               top writer
             </a>
             <button
               className="navbar-toggler"

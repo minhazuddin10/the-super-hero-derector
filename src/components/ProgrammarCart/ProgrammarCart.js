@@ -3,7 +3,7 @@ import "./ProgrammarCart.css";
 
 
 const ProgrammarCart = (props) => {
-  const { img, id, name, company, country, salary } = props.programmar;
+  const { img, id, name, country, Occupation, salary } = props.programmar;
 
 
   return (
@@ -18,8 +18,8 @@ const ProgrammarCart = (props) => {
             <div className="card-body mycart">
               <p>Id : {id}</p>
               <p>name : {name.toUpperCase()}</p>
-              <p>Company : {company}</p>
-              <p>Country : {country}</p>
+              <p>Country: {country}</p>
+              <p>Occupation :{Occupation}</p>
               <p>Salary : {salary} tk</p>
               <i className="fab fa-facebook-f icon"></i>
               <i className="fab fa-youtube icon"></i>
@@ -27,7 +27,7 @@ const ProgrammarCart = (props) => {
 
               <button
                 onClick={() => props.addHendalar(props.programmar)}
-                className="btn d-block btn-outline-info px-3 mt-2  text-uppercase detailsbtn"
+                className="btn d-block btn-outline-danger px-3 mt-2  text-uppercase detailsbtn"
               >
                 <i className="fas fa-user-plus p-0 me-2"></i>
                 add to team
